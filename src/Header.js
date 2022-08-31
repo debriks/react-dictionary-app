@@ -14,9 +14,9 @@ export default function Header() {
           <em> "I'll look up 'love' in the dictionary"</em>
         </small>
       </div>
-      <div className="Header__Quote">
+      <div className="Header__Quote d-flex flex-column text-center justify-content-center align-items-center">
         {" "}
-        <div className="d-flex flex-column text-center justify-content-center align-items-center">
+        <div>
           <p>
             "I know words. <br /> I have the best words".
           </p>

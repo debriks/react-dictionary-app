@@ -9,7 +9,11 @@
   padding-right: 25px;
   margin-top: -2px;
   margin-left: -2px;
-  height: 300px;
+}
+
+.Phonetic,
+.Synonyms {
+  height: 100px;
 }
 
 .Meaning,

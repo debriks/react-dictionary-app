@@ -33,11 +33,12 @@ export default function Results(props) {
                   );
                 })}
             </div>
+            <div className="Synonyms"></div>
             <div>
-              {props.results.meanings.synonyms.map(function (synonym, index) {
+              {props.results.meanings.map(function (meaning, index) {
                 return (
                   <div key={index}>
-                    <Synonyms synonym={synonym} />
+                    <Synonyms synonym={meaning.synonyms} />
                   </div>
                 );
               })}

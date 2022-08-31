@@ -1,19 +1,50 @@
 import React from "react";
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
-import Synonym from "./Synonym";
+import Synonyms from "./Synonyms";
 import "./Results.css";
 
-export default function Results() {
-  return (
-    <div className="Results d-flex- flex-row">
-      <div className="Results__Meaning">
-        <Meaning />
+export default function Results(props) {
+  console.log(props.results);
+
+  if (props.results) {
+    return (
+      <div className="Results">
+        <div className="Results__Word">
+          <p>{props.results.word}</p>
+        </div>
+        <div className="d-flex flex-row">
+          {props.results.meanings.slice(0, 1).map(function (meaning, index) {
+            return (
+              <div key={index}>
+                <Meaning meaning={meaning} />
+              </div>
+            );
+          })}
+          <div className="Results__Extras">
+            <div>
+              {props.results.phonetics
+                .slice(0, 1)
+                .map(function (phonetic, index) {
+                  return (
+                    <div key={index}>
+                      <Phonetic phonetic={phonetic} />
+                    </div>
+                  );
+                })}
+            </div>
+            <div>
+              {props.results.meanings.synonyms.map(function (synonym, index) {
+                return (
+                  <div key={index}>
+                    <Synonyms synonym={synonym} />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="Results_Extras d-flex flex-row">
-        <Phonetic />
-        <Synonym />
-      </div>
-    </div>
-  );
+    );
+  }
 }

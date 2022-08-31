@@ -25,3 +25,8 @@
 .Header h1 {
   font-size: 60px;
 }
+
+.Header__Title small {
+  display: block;
+  width: 450px;
+}

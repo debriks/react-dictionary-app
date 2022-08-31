@@ -1,3 +1,42 @@
-.Search {
-  height: 100px;
+input {
+  border-width: 0;
+  border-bottom: 2px solid black;
+  width: 440px;
+  background: transparent;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 0px;
+}
+
+/* ::placeholder {
+  color: black;
+} */
+
+.Search__todo,
+.Search__form {
+  border: 2px solid black;
+  border-radius: 30px;
+  height: 85px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: -2px;
+}
+
+.Search__todo {
+  width: 300px;
+  background-color: black;
+  padding-top: 15px;
+}
+
+.Search__todo p {
+  font-size: 34px;
+  font-weight: 300px;
+  color: white;
+}
+
+.Search__form {
+  width: 500px;
+  margin-left: -2px;
+  padding-top: 15px;
 }

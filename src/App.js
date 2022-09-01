@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./Header";
 import Search from "./Search";
 import Results from "./Results";
-import ImageGallery from "./ImageGallery";
 import "./App.css";
 
 export default function App() {
@@ -11,7 +10,6 @@ export default function App() {
       <Header />
       <Search />
       <Results />
-      <ImageGallery />
     </div>
   );
 }

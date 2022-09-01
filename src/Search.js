@@ -33,11 +33,7 @@ export default function Search() {
 
     const headers = { Authorization: `Bearer ${pexelsApiKey}` };
 
-    axios
-      .get(pexelsApiUrl, {
-        headers: headers,
-      })
-      .then(handleImageResponse);
+    axios.get(pexelsApiUrl, { headers: headers }).then(handleImageResponse);
   }
 
   function handleKeywordChange(event) {

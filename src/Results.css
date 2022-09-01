@@ -1,7 +1,6 @@
 .Results__Word,
 .Meaning,
-.Phonetic,
-.Synonyms {
+.Phonetic {
   border: 2px solid black;
   border-radius: 30px;
   padding-top: 15px;
@@ -11,8 +10,7 @@
   margin-left: -2px;
 }
 
-.Phonetic,
-.Synonyms {
+.Phonetic {
   height: 100px;
 }
 

@@ -1,12 +1,9 @@
 import React from "react";
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
-import Synonyms from "./Synonyms";
 import "./Results.css";
 
 export default function Results(props) {
-  console.log(props.results);
-
   if (props.results) {
     return (
       <div className="Results">
@@ -32,16 +29,6 @@ export default function Results(props) {
                     </div>
                   );
                 })}
-            </div>
-            <div className="Synonyms"></div>
-            <div>
-              {props.results.meanings.map(function (meaning, index) {
-                return (
-                  <div key={index}>
-                    <Synonyms synonym={meaning.synonyms} />
-                  </div>
-                );
-              })}
             </div>
           </div>
         </div>

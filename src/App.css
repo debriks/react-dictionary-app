@@ -25,6 +25,7 @@ a:hover {
 
 .App {
   margin-top: 50px;
+  flex-basis: 50%;
 }
 
 .ImageGallery {
@@ -35,5 +36,10 @@ a:hover {
   padding-right: 25px;
   margin-top: -2px;
   margin-left: -2px;
-  width: 800px;
+}
+
+@media screen and (max-width: 640px) {
+  .App {
+    margin-top: 20px;
+  }
 }

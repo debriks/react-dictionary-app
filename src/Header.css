@@ -1,5 +1,7 @@
 .Header {
   width: 800px;
+  display: flex;
+  flex-direction: row;
 }
 
 .Header__Title,
@@ -11,22 +13,44 @@
   padding-right: 25px;
   margin-top: -2px;
   margin-left: -2px;
-  height: 220px;
+  height: auto;
 }
 
 .Header__Title {
-  width: 550px;
+  width: 520px;
+}
+
+.Header__Title small {
+  display: block;
+  padding-bottom: 25px;
 }
 
 .Header__Quote p {
-  font-size: 25px;
+  font-size: 32px;
+  line-height: 36px;
+  padding-bottom: 0px;
+}
+
+.Header__Quote small {
+  font-size: 14px;
 }
 
 .Header h1 {
   font-size: 60px;
 }
 
-.Header__Title small {
-  display: block;
-  width: 450px;
+small {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 640px) {
+  .Header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Header__Title,
+  .Header__Quote {
+    width: 360px;
+  }
 }

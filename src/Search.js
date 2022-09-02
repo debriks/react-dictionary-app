@@ -29,7 +29,7 @@ export default function Search() {
     const pexelsApiKey =
       "563492ad6f91700001000001fbed14de5ada49acb625265768b42e5c";
 
-    const pexelsApiUrl = `https://api.pexels.com/v1/search?query=n${keyword}&per_page=1`;
+    const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
 
     const headers = { Authorization: `Bearer ${pexelsApiKey}` };
 
@@ -41,11 +41,15 @@ export default function Search() {
   }
 
   return (
-    <div className="Search d-flex flex-column">
-      <div className="d-flex flex-row">
-        <div className="Search__todo">
+    <div className="Search d-flex flex-column align-items-center">
+      <div className="Search__container">
+        <div className="Search__todo hide-for-mobile">
           {" "}
           <p> Type a word → </p>
+        </div>
+        <div className="Search__todo text-center hide-for-desktop">
+          {" "}
+          <p> Type a word ↓ </p>
         </div>
         <div className="Search__form">
           <form onSubmit={search}>

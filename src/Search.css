@@ -13,6 +13,11 @@ input {
   color: black;
 } */
 
+.Search__container {
+  display: flex;
+  flex-direction: row;
+}
+
 .Search__todo,
 .Search__form {
   border: 2px solid black;
@@ -39,4 +44,30 @@ input {
   width: 500px;
   margin-left: -2px;
   padding-top: 15px;
+}
+
+.hide-for-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  input {
+    width: 305px;
+  }
+  .Search__container {
+    flex-direction: column;
+  }
+
+  .Search__todo,
+  .Search__form {
+    width: 360px;
+  }
+
+  .hide-for-mobile {
+    display: none;
+  }
+
+  .hide-for-desktop {
+    display: inline;
+  }
 }

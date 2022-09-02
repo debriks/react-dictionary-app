@@ -3,7 +3,7 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <div className="Header d-flex flex-row">
+    <div className="Header">
       <div className="Header__Title">
         <h1> Dictionary</h1>
         <small>
@@ -14,13 +14,13 @@ export default function Header() {
           <em> "I'll look up 'love' in the dictionary"</em>
         </small>
       </div>
-      <div className="Header__Quote d-flex flex-column text-center justify-content-center align-items-center">
-        {" "}
+      <div className="Header__Quote d-flex text-center justify-content-center align-items-center">
         <div>
           <p>
-            "I know words. <br /> I have the best words".
+            "I know words. <br /> I have the best words."
+            <br />
+            <small>— Donald Trump</small>
           </p>
-          <small>— Donald Trump</small>
         </div>
       </div>
     </div>

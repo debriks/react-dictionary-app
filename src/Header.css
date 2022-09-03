@@ -23,6 +23,7 @@
 .Header__Title small {
   display: block;
   padding-bottom: 25px;
+  text-align: left !important;
 }
 
 .Header__Quote p {

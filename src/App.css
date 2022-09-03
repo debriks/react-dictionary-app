@@ -29,16 +29,18 @@ a:hover {
   align-items: center;
 }
 
-.ImageGallery {
-  border: 2px solid black;
-  border-radius: 30px;
-  padding-top: 15px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: -2px;
-  margin-left: -2px;
+.App small {
+  text-align: center;
+  margin-top: 20px;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: #885df1;
+}
 @media screen and (max-width: 640px) {
   html {
     overflow-x: hidden;
@@ -46,5 +48,12 @@ a:hover {
 
   .App {
     margin-top: 10px;
+  }
+
+  .App small {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }

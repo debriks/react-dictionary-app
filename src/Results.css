@@ -50,4 +50,9 @@
   .Results__Container {
     flex-direction: column;
   }
+
+  .Phonetic {
+    position: relative;
+    left: 22px;
+  }
 }

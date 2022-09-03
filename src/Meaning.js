@@ -13,7 +13,7 @@ export default function Meaning(props) {
       </h3>
       {props.meaning.definitions.slice(0, 1).map(function (definition, index) {
         return (
-          <div key={index} className="align-items-center">
+          <div key={index}>
             <div className="Definition">
               <p> {definition.definition} </p>
             </div>

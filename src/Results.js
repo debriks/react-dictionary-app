@@ -13,12 +13,12 @@ export default function Results(props) {
         <div className="Results__Container">
           {props.results.meanings.slice(0, 1).map(function (meaning, index) {
             return (
-              <div key={index}>
+              <div key={index} className=" d-flex align-items-center">
                 <Meaning meaning={meaning} />
               </div>
             );
           })}
-          <div className="Results__Extras d-flex align-items-center">
+          <div className="Results__Extras">
             <div>
               {props.results.phonetics
                 .slice(0, 1)

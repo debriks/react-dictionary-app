@@ -28,7 +28,6 @@
 .Header__Quote p {
   font-size: 32px;
   line-height: 36px;
-  padding-bottom: 0px;
 }
 
 .Header__Quote small {
@@ -47,10 +46,11 @@ small {
   .Header {
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
+    width: 360px;
   }
 
-  .Header__Title,
-  .Header__Quote {
+  .Header__Title {
     width: 360px;
   }
 }
